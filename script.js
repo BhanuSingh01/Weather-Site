@@ -1,5 +1,4 @@
 
-
 let userLocation = document.getElementById("userLocation"),
    converter = document.getElementById("converter"),
    heading = document.querySelector(".heading"),
@@ -26,14 +25,8 @@ let userLocation = document.getElementById("userLocation"),
 
    Forecast = document.querySelector(".Forecast");
 
-
-// let URL =`https://api.openweathermap.org/data/2.5/weather?appid=e7ceafdfd666737bd11d3e61bbbee890&units=metric&sxclude=minutely&q=London`;
-
 WEATHER_API_ENDPOINT = 'https://api.openweathermap.org/data/2.5/weather?appid=e7ceafdfd666737bd11d3e61bbbee890&q=';
 WEATHER_DATA_ENDPOINT ='https://api.openweathermap.org/data/2.5/weather?appid=e7ceafdfd666737bd11d3e61bbbee890&exclude=minutely&units=metric&';
-
-// WEATHER_API_ENDPOINT = 'http://api.weatherapi.com/v1/current?key=c573e6851a5b498c85253619242610&q=mumbai&aqi=yes';
-// WEATHER_DATA_ENDPOINT = `http://api.weatherapi.com/v1/current?key=c573e6851a5b498c85253619242610&aqi=yes&q=`;
 
 function findUserLocation(){
     
