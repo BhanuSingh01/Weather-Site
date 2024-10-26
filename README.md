@@ -2,4 +2,4 @@
 <br>
 This site shows current weather of different locations .
 <br>
-It uses API ti fetch real time data.
+It uses API to fetch real time data.
