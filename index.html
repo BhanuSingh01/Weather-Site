@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather-input">
+            <div class="input-group">
+                <input type="text" id="userLocation" placeholder="Search for places.."/>
+
+                <select class="converter" id="converter">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+
+                <i class="fa-solid fa-magnifying-glass" onclick="findUserLocation()">
+                </i>
+            </div>
+
+            <div class="weatherIcon"></div>
+            <h2 class="temprature"></h2>
+            <div class="feelsLike"></div>
+            <div class="description"></div>
+            <hr/>
+            <div class="date"></div>
+            <div class="city"></div>
+        </div>
+
+        <div class="weather-output">
+            <h1 class="heading">Current Weather </h1>
+            <div class="highlights">
+                <div class="humidity">Humidity
+                    <i class="fa-solid fa-water"></i>
+                    <h1 id="humid_value"></h1>
+                </div>
+                <div class="wind-speed">Wind Speed
+                    <i class="fa-solid fa-wind"></i>
+                    <h1 id="wind_speed_value"></h1>
+                </div>
+                <div class="sun">
+                    <span>
+                        <i class="fa-solid fa-sun"></i>
+                        <p><span id="sunrise_value"></span>Sunrise</p>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-sun"></i>
+                        <p><span id="sunset_value"></span>Sunset</p>
+                    </span>
+                </div>
+                <div class="cloud">Clouds
+                    <i class="fa-solid fa-cloud"></i>
+                    <h1 id="cloud_value"></h1>
+                </div>
+                <div class="visibility">Visibility
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <h1 id="visibility_value"></h1>
+                </div>
+                <div class="pressure">Pressure
+                    <i class="fa-solid fa-volcano"></i>
+                    <h1 id="pressure_value"></h1>
+                </div>
+                <div class="groundLevel">Ground Level
+                    <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                    <h1 id="ground_level_value"></h1>
+                </div>
+                <div class="seaLevel">Sea Level
+                    <i class="fa-solid fa-ship"></i>
+                    <h1 id="sea_level_value"></h1>
+                </div>
+                <div class="minmaxtemp">
+                    <span>       
+                        <i class="fa-solid fa-temperature-arrow-up"></i> 
+                        <p><span id="max_temp_value"></span>Max. Temp:</p>
+                    </span>
+                    <span>    
+                        <i class="fa-solid fa-temperature-arrow-down"></i>  
+                        <p><span id="min_temp_value"></span>Min. Temp:</p>
+                    </span>
+
+                </div>
+                <div class="windDegree">Wind Degree
+                    <i class="fa-solid fa-snowflake"></i>
+                    <h1 id="wind_degree_value"></h1>
+                </div>
+
+            </div>
+            <br>
+            
+            <!-- <h2 class="heading">This Week</h2> -->
+            <div class="Forecast"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
