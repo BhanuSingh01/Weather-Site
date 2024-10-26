@@ -18,7 +18,6 @@ body{
     inset: 0;
     background: #78c1f3;
     padding: 1rem 2.5rem;
-    /* display: none; */
 }
 .weatherIcon{
     background-position: 50% !important;
